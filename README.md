@@ -10,3 +10,9 @@ v0.1- Basic Framework established
           Added new item "Synergite Dust"
       
           Made "Synergite Block" generate in world
+          
+          
+
+
+
+Playable release: https://dl.dropboxusercontent.com/s/0pjjshrapzx6932/synergymod.zip
