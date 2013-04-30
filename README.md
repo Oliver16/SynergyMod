@@ -7,6 +7,6 @@ v0.1- Basic Framework established
      
      	Added new block "Synergite Block"
       
-      Added new item "Synergite Dust"
+          Added new item "Synergite Dust"
       
-      Made "Synergite Block" generate in world
+          Made "Synergite Block" generate in world
