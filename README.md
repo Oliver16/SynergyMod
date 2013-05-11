@@ -4,9 +4,12 @@ This mod is a work in process and is presented "as-is".
 
 Changelog:
 v0.1.9- Cobalt Essence
-     Added CobaltEssence Block
-     Added CobaltEssence Texture
-     Made CobaltEssence spawn in world.
+        
+          Added CobaltEssence Block
+     
+          Added CobaltEssence Texture
+     
+          Made CobaltEssence spawn in world.
 
 
 
