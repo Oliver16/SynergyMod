@@ -8,9 +8,9 @@ import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 
 
-public class SynergiteBlock extends Block
+public class CobaltEssence extends Block
 {
- public SynergiteBlock(int id, int texture)
+ public CobaltEssence(int id, int texture)
  {
   super(id, Material.rock);
   this.setCreativeTab(CreativeTabs.tabBlock);

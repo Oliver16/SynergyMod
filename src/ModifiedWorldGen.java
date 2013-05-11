@@ -27,6 +27,8 @@ public class ModifiedWorldGen implements IWorldGenerator
 	  int Zcoord = blockZ + random.nextInt(16);
 	  
 	  (new WorldGenMinable(SynergyMod.SynergiteBlock.blockID, 15)).generate(world, random, Xcoord, Ycoord, Zcoord);
+	  (new WorldGenMinable(SynergyMod.CobaltEssence.blockID, 15)).generate(world, random, Xcoord, Ycoord, Zcoord);
+
  }
  
  private void generateNether(World world, Random random, int blockX, int blockZ) 

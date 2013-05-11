@@ -23,6 +23,8 @@ public class SynergyMod
 	
 	public static Block SynergiteBlock;
 	
+	public static Block CobaltEssence;
+	
 	
 	public static final Item SynergiteDust = new SynergiteDust(5001).setMaxStackSize(16).setCreativeTab(CreativeTabs.tabMisc).setUnlocalizedName("SynergiteDust");
 	
@@ -31,8 +33,12 @@ public class SynergyMod
  public void load(FMLInitializationEvent event) 
  {
 	 SynergiteBlock = new SynergiteBlock(250, 0) .setUnlocalizedName("SynergiteBlock") .setHardness(3) .setStepSound(Block.soundStoneFootstep);
+	 CobaltEssence = new CobaltEssence(251, 0) .setUnlocalizedName("CobaltEssence") .setHardness(2) .setStepSound(Block.soundStoneFootstep);
 	 GameRegistry.registerBlock(SynergiteBlock);
+	 GameRegistry.registerBlock(CobaltEssence);
 	 MinecraftForge.setBlockHarvestLevel(SynergiteBlock, "pickaxe", 3);
+	 MinecraftForge.setBlockHarvestLevel(CobaltEssence, "pickaxe", 2);
+	 LanguageRegistry.addName(CobaltEssence, "Cobalt Essence");
 	 LanguageRegistry.addName(SynergiteBlock, "Synergite Block");
 	 LanguageRegistry.addName(SynergiteDust, "Synergite Dust");
 	 GameRegistry.registerWorldGenerator(new ModifiedWorldGen());
@@ -42,8 +48,9 @@ public class SynergyMod
  }
  public void registerIcons(IconRegister iconRegister)
  {
-          Icon blockIcon = iconRegister.registerIcon("SynergyMod:SynergiteBlock.png");
-          Icon itemIcon = iconRegister.registerIcon("SynergyMod:SynergiteDust.png");
+          Icon SynergiteBlockIcon = iconRegister.registerIcon("SynergyMod:SynergiteBlock.png");
+          Icon CobaltEssenceIcon = iconRegister.registerIcon("SynergyMod:CobaltEssence.png");
+          Icon SynergiteDustIcon = iconRegister.registerIcon("SynergyMod:SynergiteDust.png");
  }
 }
  
