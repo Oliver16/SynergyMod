@@ -18,11 +18,11 @@ public class CobaltEssence extends Block
   
 }
  public int idDropped(int par1, Random random, int zero) {
-     return SynergyMod.SynergiteDust.itemID;
+     return SynergyMod.CobaltRuneDust.itemID;
 }
  public int quantityDropped(Random random)
  {
-	 return 5;
+	 return 4;
  }
  
 }
