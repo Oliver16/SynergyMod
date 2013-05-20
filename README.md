@@ -1,5 +1,4 @@
-
-SynergyMod v0.1
+SynergyMod v0.2
 ==========
 This mod is a work in process and is presented "as-is".
 
