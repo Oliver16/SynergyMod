@@ -1,8 +1,21 @@
+
 SynergyMod v0.1
 ==========
 This mod is a work in process and is presented "as-is".
 
 Changelog:
+v0.2.0- Rune Kiln
+          
+          Added RuneKiln block, along with functionality.
+          
+          Added CobaltRuneDust
+          
+          Added recipes to RuneKiln
+          
+          Made CobaltRune item and recipe
+
+
+
 v0.1.9- Cobalt Essence
         
           Added CobaltEssence Block
@@ -15,7 +28,7 @@ v0.1.9- Cobalt Essence
 
 v0.1- Basic Framework established
      
-     	Added new block "Synergite Block"
+          Added new block "Synergite Block"
       
           Added new item "Synergite Dust"
       
