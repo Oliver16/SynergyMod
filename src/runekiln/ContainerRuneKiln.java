@@ -1,4 +1,4 @@
-package synergymod;
+package synergymod.runekiln;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;

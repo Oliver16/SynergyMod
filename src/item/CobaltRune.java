@@ -1,11 +1,11 @@
-package synergymod;
+package synergymod.item;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
-public class SynergiteDust extends Item {
+public class CobaltRune extends Item {
 
-        public SynergiteDust(int id) {
+        public CobaltRune(int id) {
                 super(id);
                 setMaxStackSize(64);
         }

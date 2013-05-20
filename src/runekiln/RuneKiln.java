@@ -1,6 +1,8 @@
-package synergymod;
+package synergymod.runekiln;
 
 import java.util.Random;
+
+import synergymod.SynergyMod;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
@@ -41,7 +43,7 @@ public class RuneKiln extends BlockContainer
     @SideOnly(Side.CLIENT)
     private Icon furnaceIconFront;
 
-    protected RuneKiln(int par1, boolean par2)
+    public RuneKiln(int par1, boolean par2)
     {
         super(par1, Material.rock);
         this.isActive = par2;

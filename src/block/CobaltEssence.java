@@ -1,6 +1,8 @@
-package synergymod;
+package synergymod.block;
 
 import java.util.Random;
+
+import synergymod.SynergyMod;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -8,9 +10,9 @@ import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 
 
-public class SynergiteBlock extends Block
+public class CobaltEssence extends Block
 {
- public SynergiteBlock(int id, int texture)
+ public CobaltEssence(int id, int texture)
  {
   super(id, Material.rock);
   this.setCreativeTab(CreativeTabs.tabBlock);
@@ -18,11 +20,11 @@ public class SynergiteBlock extends Block
   
 }
  public int idDropped(int par1, Random random, int zero) {
-     return SynergyMod.SynergiteDust.itemID;
+     return SynergyMod.CobaltRuneDust.itemID;
 }
  public int quantityDropped(Random random)
  {
-	 return 5;
+	 return 4;
  }
  
 }

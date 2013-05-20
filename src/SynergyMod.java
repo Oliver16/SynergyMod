@@ -1,5 +1,13 @@
 package synergymod;
 
+import synergymod.block.CobaltEssence;
+import synergymod.block.SynergiteBlock;
+import synergymod.item.CobaltRune;
+import synergymod.item.CobaltRuneDust;
+import synergymod.item.SynergiteDust;
+import synergymod.runekiln.GuiHandler;
+import synergymod.runekiln.RuneKiln;
+import synergymod.runekiln.TileEntityRuneKiln;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
