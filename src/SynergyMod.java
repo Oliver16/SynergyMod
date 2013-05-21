@@ -1,5 +1,12 @@
 package synergymod;
 
+import net.minecraft.block.Block;
+import net.minecraft.client.renderer.texture.IconRegister;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.Icon;
+import net.minecraftforge.common.MinecraftForge;
 import synergymod.block.CobaltEssence;
 import synergymod.block.SynergiteBlock;
 import synergymod.item.CobaltRune;
@@ -8,13 +15,6 @@ import synergymod.item.SynergiteDust;
 import synergymod.runekiln.GuiHandler;
 import synergymod.runekiln.RuneKiln;
 import synergymod.runekiln.TileEntityRuneKiln;
-import net.minecraft.block.Block;
-import net.minecraft.client.renderer.texture.IconRegister;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.Icon;
-import net.minecraftforge.common.MinecraftForge;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Init;
 import cpw.mods.fml.common.Mod.Instance;
@@ -37,6 +37,9 @@ public class SynergyMod
 	public static SynergyMod instance = new SynergyMod();
 	
 	private GuiHandler guihandler = new GuiHandler();
+	public static CreativeTabs tabSynergyMod = new SynergyModTab(CreativeTabs.getNextID(),"SynergyMod"); 
+	
+ 
 	
 	public static Block SynergiteBlock;
 	
@@ -73,6 +76,14 @@ public class SynergyMod
 	 LanguageRegistry.addName(CobaltRune, "Cobalt Rune");
 	 ItemStack brickStack = new ItemStack(Block.brick);
 	 ItemStack stonebrickStack = new ItemStack(Block.stoneBrick);
+	 CobaltEssence.setCreativeTab(this.tabSynergyMod);
+	 SynergiteBlock.setCreativeTab(this.tabSynergyMod);
+	 RuneKilnIdle.setCreativeTab(this.tabSynergyMod);
+	 CobaltRuneDust.setCreativeTab(this.tabSynergyMod);
+	 SynergiteDust.setCreativeTab(this.tabSynergyMod);
+	 CobaltRune.setCreativeTab(this.tabSynergyMod);
+	 LanguageRegistry.instance().addStringLocalization("SynergyMod","Synergy Mod");
+	 
 
 	 GameRegistry.addRecipe(new ItemStack(SynergyMod.RuneKilnIdle), "xxx", "x x", "yyy", 
 	         'x', brickStack, 'y', stonebrickStack);
