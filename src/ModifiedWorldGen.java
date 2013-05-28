@@ -28,6 +28,11 @@ public class ModifiedWorldGen implements IWorldGenerator
 	  
 	  (new WorldGenMinable(SynergyMod.SynergiteBlock.blockID, 15)).generate(world, random, Xcoord, Ycoord, Zcoord);
 	  (new WorldGenMinable(SynergyMod.CobaltEssence.blockID, 15)).generate(world, random, Xcoord, Ycoord, Zcoord);
+	  (new WorldGenMinable(SynergyMod.AlabasterEssence.blockID, 15)).generate(world, random, Xcoord, Ycoord, Zcoord);
+	  (new WorldGenMinable(SynergyMod.ViridianEssence.blockID, 15)).generate(world, random, Xcoord, Ycoord, Zcoord);
+	  (new WorldGenMinable(SynergyMod.IgneousEssence.blockID, 15)).generate(world, random, Xcoord, Ycoord, Zcoord);
+
+
 
  }
  

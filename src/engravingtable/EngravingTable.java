@@ -1,5 +1,89 @@
 package synergymod.engravingtable;
+import java.util.Random;
 
-public class EngravingTable {
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+
+import net.minecraft.block.BlockContainer;
+import net.minecraft.block.material.Material;
+import net.minecraft.client.renderer.texture.IconRegister;
+import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.Icon;
+import net.minecraft.util.MathHelper;
+import net.minecraft.world.World;
+import synergymod.SynergyMod;
+
+
+public class EngravingTable extends BlockContainer {
+
+public EngravingTable(int id, int texture) {
+super(id, Material.wood);
+}
+
+public int idDropped(int par1, Random par2Random, int par3)
+{
+return SynergyMod.EngravingTable.blockID;
+}
+
+
+/**
+* The type of render function that is called for this block
+*/
+public int getRenderType()
+{
+return -2;
+}
+
+/**
+* Is this block (a) opaque and (B) a full 1m cube? This determines whether or not to render the shared face of two
+* adjacent blocks and also whether the player can attach torches, redstone wire, etc to this block.
+*/
+public boolean isOpaqueCube()
+{
+return false;
+}
+
+/**
+* If this block doesn't render as an ordinary block it will return False (examples: signs, buttons, stairs, etc)
+*/
+public boolean renderAsNormalBlock()
+{
+return false;
+}
+
+public void onBlockPlacedBy(World world, int i, int j, int k, EntityLiving entityliving)
+{
+int rotation = MathHelper.floor_double((double)((entityliving.rotationYaw * 4F) / 360F) + 2.5D) & 3;
+world.setBlock(i, j, k, rotation - 1);
+}
+
+public boolean onBlockActivated(World var1, int var2, int var3, int var4, EntityPlayer player, int var6, float var7, float var8, float var9)
+{
+         if (!player.isSneaking())
+{
+player.openGui(SynergyMod.instance, 1, var1, var2, var3, var4);
+return true;
+}
+else
+{
+return false;
+}
+
+}
+public TileEntity createNewTileEntity(World par1World)
+{
+	try {
+		return new TileEntityEngravingTable();
+		} catch (Exception var3) {
+		throw new RuntimeException(var3);
+		}
+}
+@Override
+public void registerIcons(IconRegister par1IconRegister)
+{
+         this.blockIcon = par1IconRegister.registerIcon("SynergyMod:EngravingTable");
+}
 
 }

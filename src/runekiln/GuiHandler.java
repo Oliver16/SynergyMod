@@ -1,5 +1,6 @@
 package synergymod.runekiln;
 
+import synergymod.engravingtable.TileEntityEngravingTable;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
@@ -26,6 +27,7 @@ TileEntity tile_entity = world.getBlockTileEntity(x, y, z);
 		
 		if(tile_entity instanceof TileEntityRuneKiln){
 			return new GuiRuneKiln(player.inventory, (TileEntityRuneKiln) tile_entity);
+
 		}
 		return null;
 	}

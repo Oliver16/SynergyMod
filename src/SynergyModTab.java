@@ -11,10 +11,10 @@ super(position, tabID);
 @SideOnly(Side.CLIENT)
 public int getTabIconItemIndex()
 {
-return SynergyMod.CobaltRune.itemID; //this is the item that is displayed on your tab's icon
+return SynergyMod.EngravingTable.blockID; //this is the item that is displayed on your tab's icon
 }
 public String getTranslatedTabLabel()
 {
-return "SynergyMod"; //the name that shows up in-game
+return "Runic Synergy Mod"; //the name that shows up in-game
 }
 }

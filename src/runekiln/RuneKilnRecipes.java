@@ -31,7 +31,10 @@ public class RuneKilnRecipes
     private RuneKilnRecipes()
     {
         this.addSmelting(SynergyMod.CobaltRuneDust.itemID, new ItemStack(SynergyMod.CobaltRune), 0.7F);
-        
+        this.addSmelting(SynergyMod.AlabasterRuneDust.itemID, new ItemStack(SynergyMod.AlabasterRune), 0.7F);
+        this.addSmelting(SynergyMod.ViridianRuneDust.itemID, new ItemStack(SynergyMod.ViridianRune), 0.7F);
+        this.addSmelting(SynergyMod.IgneousRuneDust.itemID, new ItemStack(SynergyMod.IgneousRune), 0.7F);
+
     }
 
     /**
